@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="7dp"
+    app:cardElevation="7dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/collapsedRelLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp">
+
+            <ImageView
+                android:id="@+id/imgMovieIcon"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:src="@color/design_default_color_primary" />
+
+            <TextView
+                android:id="@+id/txtMovieName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgMovieIcon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="Movie Name"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/btnArrowDown"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/imgMovieIcon"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_down_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/expandedRelLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/collapsedRelLay"
+            android:layout_margin="7dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/originalLanText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Original Language: "
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/txtOriginalLan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/originalLanText"
+                android:text="en"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/releaseDateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/originalLanText"
+                android:text="Release date: "
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/txtReleaseDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/originalLanText"
+                android:layout_toEndOf="@id/releaseDateText"
+                android:text="00/00/0000"
+                android:textSize="17sp" />
+
+
+            <TextView
+                android:id="@+id/averageGradeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/releaseDateText"
+                android:text="Average grade: "
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/txtAverageGrade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/releaseDateText"
+                android:layout_toEndOf="@id/averageGradeText"
+                android:text="10.00"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/numberOfVotesText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/averageGradeText"
+                android:text="Number of votes: "
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/txtNumberOfVotes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/averageGradeText"
+                android:layout_toEndOf="@id/numberOfVotesText"
+                android:text="000"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/btnArrowUp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/releaseDateText"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_up_arrow" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
