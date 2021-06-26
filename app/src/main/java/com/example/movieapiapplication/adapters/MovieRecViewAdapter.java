@@ -1,4 +1,4 @@
-package com.example.movieapiapplication;
+package com.example.movieapiapplication.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -12,7 +12,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.example.movieapiapplication.Models.ResultsItem;
+import com.example.movieapiapplication.R;
+import com.example.movieapiapplication.models.ResultsItem;
 
 import org.jetbrains.annotations.NotNull;
 

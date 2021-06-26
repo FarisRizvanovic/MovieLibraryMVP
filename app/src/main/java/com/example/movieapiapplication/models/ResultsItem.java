@@ -1,4 +1,4 @@
-package com.example.movieapiapplication.Models;
+package com.example.movieapiapplication.models;
 
 import java.util.List;
 import com.google.gson.annotations.SerializedName;

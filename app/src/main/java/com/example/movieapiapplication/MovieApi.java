@@ -1,6 +1,6 @@
 package com.example.movieapiapplication;
 
-import com.example.movieapiapplication.Models.Main;
+import com.example.movieapiapplication.models.Main;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

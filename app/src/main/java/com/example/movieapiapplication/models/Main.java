@@ -1,4 +1,4 @@
-package com.example.movieapiapplication.Models;
+package com.example.movieapiapplication.models;
 
 import java.util.List;
 import com.google.gson.annotations.SerializedName;
@@ -33,13 +33,4 @@ public class Main{
 		return totalResults;
 	}
 
-	@Override
-	public String toString() {
-		return "Main{" +
-				"page=" + page +
-				", totalPages=" + totalPages +
-				", results=" + results +
-				", totalResults=" + totalResults +
-				'}';
-	}
 }
